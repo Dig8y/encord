@@ -106,13 +106,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="md:w-[512px] md:h-[482px] w-[341px] h-[322px]">
-              <Image src={heroImage} alt="Hero Image" style={{ objectFit: "cover", opacity: 1 }} />
+            <div className="md:w-[512px] md:h-[482px] w-[341px] h-[322px]" >
+              <Image src={heroImage} alt="Hero Image" style={{ objectFit: "cover", opacity: 1 }}  />
             </div>
           </div>
           <div className="py-14 sm:hidden">
             <h2 className="text-2xl font-semibold text-white text-center max-w-[302px] xs:max-w-[396px] sm:max-w-[600px] mx-auto">The complete data development platform for AI model development</h2>
-            <p className="text-sm text-[#FAFAFA]/70 mt-5 mx-auto text-center xs:max-w-[511px] sm:max-w-[648px]">Unlock the potential of AI for your organization. Streamline your data-centric AI pipelines to build better models and deploy high-quality production AI, faster.</p>
+            <p className="text-sm  text-[#FAFAFA]/70 mt-5 mx-auto text-center xs:max-w-[511px] sm:max-w-[648px]">Unlock the potential of AI for your organization. Streamline your data-centric AI pipelines to build better models and deploy high-quality production AI, faster.</p>
 
           </div>
         </article>

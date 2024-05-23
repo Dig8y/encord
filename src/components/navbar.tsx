@@ -11,18 +11,20 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 export default function Navbar() {
   const [navStyle, setNavStyle] = useState(0)
-  document.addEventListener("scroll", () => {
-    const windowScrollHeight = window.scrollY
-    if (windowScrollHeight < 10) {
-      // nothing
-      setNavStyle(0)
-    } else if (windowScrollHeight > 10 && windowScrollHeight < 25) {
-      // border shadow
-      setNavStyle(1)
-    } else if (windowScrollHeight > 25) {
-      // white bg & shadow
-      setNavStyle(2)
-    }
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      const windowScrollHeight = window.scrollY
+      if (windowScrollHeight < 10) {
+        // nothing
+        setNavStyle(0)
+      } else if (windowScrollHeight > 10 && windowScrollHeight < 25) {
+        // border shadow
+        setNavStyle(1)
+      } else if (windowScrollHeight > 25) {
+        // white bg & shadow
+        setNavStyle(2)
+      }
+    })
   })
 
   console.log(navStyle)
